@@ -1,0 +1,81 @@
+subject,body,category
+Invoice issue,My latest invoice has an incorrect amount,Billing
+Payment failed,I tried to make a payment but it was declined,Billing
+Refund request,I would like a refund for my recent purchase,Billing
+Charged twice,I was charged twice for the same transaction,Billing
+Billing statement,I need a copy of my billing statement,Billing
+Subscription payment,My subscription payment is not showing correctly,Billing
+Wrong charge,There is an unexpected charge on my account,Billing
+Payment receipt,I have not received my payment receipt,Billing
+Credit card issue,My card payment was processed with the wrong amount,Billing
+Invoice overdue,I received an incorrect overdue invoice notice,Billing
+Login problem,I cannot log into the application because my password is rejected,Technical
+Application crash,The application crashes whenever I try to open it,Technical
+Server error,I am getting a server error when accessing the dashboard,Technical
+Password reset,The password reset link is not working,Technical
+Website not loading,The website is not loading on my computer,Technical
+Mobile app bug,The mobile application closes unexpectedly,Technical
+API error,Our API requests are returning an error,Technical
+Account locked,My account is locked and I cannot sign in,Technical
+System slow,The application is extremely slow today,Technical
+Notification bug,I am not receiving system notifications,Technical
+Leave request,I want to apply for annual leave,HR
+Salary question,I have a question about my salary slip,HR
+Employee benefits,Can you explain the employee health benefits,HR
+Work from home,I would like to request work from home,HR
+Attendance issue,My attendance record is incorrect,HR
+Payroll problem,There is an issue with my payroll information,HR
+Holiday policy,Please tell me about the company holiday policy,HR
+Joining documents,I need help with my employee joining documents,HR
+Performance review,When will the next performance review take place,HR
+Employee ID,I have not received my employee identification card,HR
+Product information,I would like more information about your services,General
+Contact support,How can I contact the customer support team,General
+Business hours,What are your customer support working hours,General
+Feedback,I would like to provide feedback about the service,General
+Service information,Can you explain how your service works,General
+Account information,I need general information about my account,General
+Contact details,Where can I find your company contact details,General
+Help request,I need some general assistance with your service,General
+Getting started,How can I get started with the platform,General
+Thank you,Thank you for helping me with my previous request,General
+Payment pending,My payment has been pending for several hours,Billing
+Refund pending,My refund has not arrived yet,Billing
+Transaction failed,My recent transaction failed unexpectedly,Billing
+Incorrect invoice,The total amount shown on my invoice is incorrect,Billing
+Subscription charge,I was charged for a subscription I did not expect,Billing
+Payment confirmation,I need confirmation that my payment was received,Billing
+Duplicate transaction,The same transaction appears twice in my account,Billing
+Billing address,How can I update my billing address,Billing
+Tax on invoice,The tax amount on my invoice appears incorrect,Billing
+Card charged,My bank card was charged but the order was not completed,Billing
+Database error,The system is showing a database connection error,Technical
+Unable to sign in,The login page keeps rejecting my credentials,Technical
+Server unavailable,The server is currently unavailable,Technical
+Software bug,I found a bug while using the application,Technical
+Page error,A page displays an unexpected error message,Technical
+Connection issue,The application cannot connect to the server,Technical
+Authentication error,I am receiving an authentication error during login,Technical
+Application freeze,The application freezes when I open the dashboard,Technical
+Password issue,I forgot my password and cannot access my account,Technical
+Technical support,The application is not functioning correctly and needs technical assistance,Technical
+Leave balance,I want to know my remaining leave balance,HR
+Salary slip,I cannot find my latest salary slip,HR
+Payroll query,I have a question about this month's payroll,HR
+Employee benefits,I need information about employee benefits,HR
+Attendance correction,Please correct the attendance recorded for me,HR
+HR policy,I need clarification about an HR policy,HR
+Work from home request,I would like to request remote work for tomorrow,HR
+Holiday request,I want to know how to request a company holiday,HR
+Employee information,I need to update my employee information,HR
+Training program,When is the next employee training program,HR
+Company information,I would like some information about the company,General
+Customer support,How can I reach customer support,General
+Service details,Please provide more details about your service,General
+Office hours,What time does your support team operate,General
+General inquiry,I have a general question about the platform,General
+Platform information,Can you explain the main features of the platform,General
+Contact information,I need the support team's contact information,General
+Help center,Where can I find the help center,General
+Service availability,Is the service available in my region,General
+Additional information,Where can I find more information about the product,General

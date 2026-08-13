@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Auto Ticket Categorizer</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="topbar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                AI
+            </div>
+
+            <div>
+                <h1>Auto Ticket Categorizer</h1>
+                <p>AI-powered support ticket routing</p>
+            </div>
+
+        </div>
+
+        <div class="system-status">
+            <span class="status-dot"></span>
+            Model Online
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="container">
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-badge">
+                NLP · TF-IDF · Logistic Regression
+            </div>
+
+            <h2>
+                Intelligent Ticket
+                <span>Routing</span>
+            </h2>
+
+            <p>
+                Analyze incoming support tickets and automatically
+                route them to the appropriate department with
+                confidence-based human review.
+            </p>
+
+        </section>
+
+
+        <!-- DASHBOARD -->
+
+        <section class="dashboard">
+
+            <!-- INPUT CARD -->
+
+            <div class="card input-card">
+
+                <div class="card-header">
+
+                    <div>
+                        <h3>Incoming Ticket</h3>
+                        <p>
+                            Enter the subject and message
+                            to classify the ticket.
+                        </p>
+                    </div>
+
+                    <div class="ticket-icon">
+                        ✉
+                    </div>
+
+                </div>
+
+
+                <label for="subject">
+                    Ticket Subject
+                </label>
+
+                <input
+                    id="subject"
+                    type="text"
+                    placeholder="Example: Payment failed"
+                >
+
+
+                <label for="body">
+                    Ticket Message
+                </label>
+
+                <textarea
+                    id="body"
+                    rows="7"
+                    placeholder="Describe the customer's issue..."
+                ></textarea>
+
+
+                <button
+                    id="classifyBtn"
+                    class="classify-btn"
+                >
+                    <span>Classify Ticket</span>
+                    <span class="arrow">→</span>
+                </button>
+
+            </div>
+
+
+            <!-- RESULT CARD -->
+
+            <div class="card result-card">
+
+                <div class="card-header">
+
+                    <div>
+                        <h3>Routing Result</h3>
+                        <p>
+                            AI classification and routing decision
+                        </p>
+                    </div>
+
+                    <div class="ai-icon">
+                        ✦
+                    </div>
+
+                </div>
+
+
+                <!-- EMPTY STATE -->
+
+                <div
+                    id="emptyState"
+                    class="empty-state"
+                >
+
+                    <div class="empty-icon">
+                        ✦
+                    </div>
+
+                    <h4>Waiting for a ticket</h4>
+
+                    <p>
+                        Submit a support ticket to see
+                        the classification result.
+                    </p>
+
+                </div>
+
+
+                <!-- RESULT -->
+
+                <div
+                    id="resultContent"
+                    class="result-content hidden"
+                >
+
+                    <div class="category-box">
+
+                        <span class="result-label">
+                            Predicted Department
+                        </span>
+
+                        <div
+                            id="category"
+                            class="category"
+                        >
+                            BILLING
+                        </div>
+
+                    </div>
+
+
+                    <div class="metrics">
+
+                        <div class="metric">
+
+                            <span class="result-label">
+                                Confidence
+                            </span>
+
+                            <strong id="confidence">
+                                0%
+                            </strong>
+
+                        </div>
+
+
+                        <div class="metric">
+
+                            <span class="result-label">
+                                Priority
+                            </span>
+
+                            <strong id="priority">
+                                Normal
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="statusBox"
+                        class="status-box"
+                    >
+
+                        <div class="status-indicator"></div>
+
+                        <div>
+
+                            <span class="result-label">
+                                Routing Status
+                            </span>
+
+                            <strong id="status">
+                                Auto-assigned
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="confidence-container">
+
+                        <div class="confidence-header">
+
+                            <span>
+                                Model confidence
+                            </span>
+
+                            <span id="confidenceText">
+                                0%
+                            </span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                id="confidenceBar"
+                                class="progress-bar"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFO CARDS -->
+
+        <section class="features">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    NLP
+                </div>
+
+                <div>
+                    <h4>Text Intelligence</h4>
+                    <p>
+                        TF-IDF converts ticket text into
+                        machine-learning features.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ML
+                </div>
+
+                <div>
+                    <h4>Smart Classification</h4>
+                    <p>
+                        Logistic Regression predicts the
+                        appropriate department.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    60%
+                </div>
+
+                <div>
+                    <h4>Human Review</h4>
+                    <p>
+                        Low-confidence predictions are
+                        routed for manual review.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        Auto Ticket Categorizer
+        <span>•</span>
+        AI / ML Assessment Project
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
